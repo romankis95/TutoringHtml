@@ -1,0 +1,67 @@
+body{
+	font-family: Arial; /* Font principale */
+	font-size:14px; /* Dimensione base testo */
+}
+
+.topnav {
+    background-color: #333; /* Colore navbar */
+    overflow: hidden; /* Nasconde overflow */
+}
+
+.carousel-container {
+  position: absolute; /* Sovrappone il contenuto all'immagine */
+  background-color: rgba(26, 26, 26, .3); /* Sfondo semi-trasparente per leggibilità */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex; /* Centra il contenuto */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-direction: column; /* Disposizione verticale */
+  z-index: 3; /* Porta il contenuto sopra l'immagine */
+  opacity: 1;
+  padding: 2rem; /* Padding fluido, sostituisce valori fissi rimossi */
+  width: 100%; /* Larghezza fluida, sostituisce width fissa rimossa */
+  box-sizing: border-box; /* Include padding nel calcolo larghezza */
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 1rem; /* Riduce padding su mobile */
+    font-size: 1rem; /* Riduce font su mobile */
+  }
+}
+
+.carousel {
+  width: 100%; /* Carosello sempre largo */
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color); /* Colore di sfondo variabile */
+  position: relative; /* Necessario per posizionamento assoluto del container */
+}
+
+
+/**
+Questa sezione gestisce l'immagine di sfondo del carosello OPERE */
+.carousel-img-box {
+  height: 80vh;; /* Altezza responsiva per desktop */
+  min-height: 250px; /* Altezza minima */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .carousel-img-box {
+    height: 40vh; /* Altezza minore su mobile */
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+.titolo {
+  color: white; /* Testo bianco per contrasto */
+  text-shadow: 2px 2px 4px #000000; /* Ombra per leggibilità */
+}

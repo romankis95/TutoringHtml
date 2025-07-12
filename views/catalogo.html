@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il mondo di Escher</title>
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="../public/css/bootstrap.css">
+  <script src="../public/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Il mondo di Escher</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Introduzione</a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalogo.html">Elenco opere</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Linea del tempo</a></li>
+              <li><a class="dropdown-item" href="#">Mappa dei luoghi</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca" />
+          <button class="btn btn-outline-light" type="submit">Cerca</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- inizio contenuto body -->
+
+
+  <main role="main">
+
+    <section class="jumbotron text-center" style="background-color:#F5F5F5">
+      <div class="container">
+        <h1 class="jumbotron-heading" style="height: 20px;">Catalogo</h1>
+        <p class="lead text-muted">.</p>
+        <p>
+
+         
+
+          <!-- INIZIO FILTRI OPERE -->
+          <div class="container mb-4">
+            <div class="row g-2 align-items-end">
+              <div class="col-md-3">
+                <div class="dropdown">
+                  <button class="btn btn-outline-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">Autori</button>
+                  <div class="dropdown-menu p-3" style="min-width: 220px;">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autore1">
+                      <label class="form-check-label" for="autore1">De Chirico</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autore2">
+                      <label class="form-check-label" for="autore2">Carrà</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="autore3">
+                      <label class="form-check-label" for="autore3">Savinio</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="dropdown">
+                  <button class="btn btn-outline-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">Temi</button>
+                  <div class="dropdown-menu p-3" style="min-width: 220px;">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="tema1">
+                      <label class="form-check-label" for="tema1">Metafisica</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="tema2">
+                      <label class="form-check-label" for="tema2">Simbolismo</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="tema3">
+                      <label class="form-check-label" for="tema3">Paesaggio</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="dropdown">
+                  <button class="btn btn-outline-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">Data</button>
+                  <div class="dropdown-menu p-3" style="min-width: 220px;">
+                    <label for="dateStart" class="form-label">Da:</label>
+                    <input type="date" class="form-control mb-2" id="dateStart">
+                    <label for="dateEnd" class="form-label">A:</label>
+                    <input type="date" class="form-control" id="dateEnd">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Cerca titolo...">
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col text-end">
+                <button class="btn btn-primary me-2" type="button">Applica filtri</button>
+                <button class="btn btn-outline-secondary" type="button">Reset</button>
+              </div>
+            </div>
+          </div>
+          <!-- FINE FILTRI OPERE -->
+
+          <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/piazza-d'italia-de-chirico.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/enigma-dell'oracolo-de-chirico.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/torre-rossa-de-chirico.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/canto_d'amore-de-chirico.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/le-muse-inquietanti-de-chirico.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/ettore-e-andromaca-de-chirico.jpeg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/madre-e-figlio-carrà.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/musa-metafisica-carrà.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/la-camera-incantata-carrà.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/il-saluto-degli-argonauti-partenti-savinio.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" img src="../public/img/i-re-magi-savinio.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="pagination justify-content-center" style="margin:20px 0">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+
+
+
+
+
+  </main>
+  <!-- fine contenuto body -->
+
+
+  <!-- fine contenuto body -->
+  <footer class="py-3 my-4 ">
+    <ul class="nav navbar-dark bg-dark justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link px-2 text-body-secondary" style="color:white !important;">Home</a>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Introduzione</a></li>
+      <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Catalogo</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Crediti</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Licenze</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">Copyright (c) 2025 by Nadine Nicoli</p>
+  </footer>
+
+</body>
+
+</html>

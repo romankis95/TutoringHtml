@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il mondo di Escher</title>
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="../public/css/bootstrap.css">
+  <script src="../public/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+  <!-- INIZIO Navbar -->
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark"> 
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Il mondo di Escher</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Introduzione</a>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalogo.html">Elenco opere</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Linea del tempo</a></li>
+              <li><a class="dropdown-item" href="#">Mappa dei luoghi</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca" />
+          <button class="btn btn-outline-light" type="submit">Cerca</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- FINE Navbar -->
+
+  <!-- INIZIO Carosello principale -->
+  <div id="caroselloPrincipale" class="carousel slide" data-bs-ride="caroselloPrincipale">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="../public/img/giorno-e-notte2.jpg" class="carousel-container-img " alt="..." style="height:600px;width:1700px;"> -->
+        <img src="../public/img/giorno-e-notte2.jpg" class="carousel-container-img img-fluid" alt="..." >
+
+        <div class="carousel-container">
+          <h1 class="titolo">Il mondo di Escher</h1><br>
+          <h4 class="titolo">“Viaggio tra forme, illusioni e simmetrie”</h4>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- FINE Carosello principale -->
+
+  <!-- INIZIO Main: Sezione Progetto -->
+  <main class="pt-2" id="scopri-di-piu" style="background-color:white; color: black">
+    <!-- metafisica -->
+    <section class="container-fluid py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-10">
+            <h2>Il progetto</h2>
+            <p class="text-justify mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi illum
+              necessitatibus cumque id expedita delectus repudiandae, reprehenderit laboriosam. Molestias est mollitia
+              ipsam alias voluptatem sint quod officiis cum earum similique! Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Distinctio magnam molestias laborum alias laboriosam, harum cupiditate optio, deserunt
+              nobis animi molestiae in saepe sequi quidem cum? Laudantium corporis veritatis distinctio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FINE Main: Sezione Progetto -->
+
+  <!-- INIZIO Main: Sezione Autori -->
+  <main id="scopri-di-piu2">
+
+    <!-- INIZIO autori -->
+    <section class="py-5" style="background-color:#E8E8E8	">
+      <div class="container px-1 my-1 border">
+        <div class="row gx-5 align-items-center ">
+          <div class="col-lg-5 ">
+            <!-- <img class="img-fluid rounded mb-5 mb-lg-0" src="../public/img/autori/de-chirico.jpg" alt="...">-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../public/img/mano-con-sfera-riflettente2.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
+                  <!-- rendere le immagini più piccole-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 " >
+            <h2 class="fw-bolder" >M.C. Escher </h2>
+            <p class="lead fw-normal text-muted mb-0">La pittura metafisica è una corrente artistica del XX secolo, nata in Italia e caratterizzata dalla rappresentazione di oggetti in modo nitido e statico, ma inseriti in contesti stranianti e suggestivi, volti a esplorare l'essenza profonda della realtà. I suoi principali esponenti sono Giorgio de Chirico, Carlo Carrà e Alberto Savinio. </p>
+            <p class="lead fw-normal text-muted mb-0">.... </p>
+            <p class="lead fw-normal text-muted mb-0">...
+            </p>
+            <p class="lead fw-normal text-muted mb-0">....</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FINE autori -->
+
+    <!-- INIZIO Opere -->
+    <section class="py-5">
+      <div class="container px- my-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-first order-lg-last">
+            <!--<img class="img-fluid rounded mb-5 mb-lg-0" src="/assets/blogpost/2.jpg" alt="Terra nelle mani" />-->
+            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../public/img/relatività.jpg" class="img-fluid rounded mb-5 mb-lg-0"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../public/img/piazza-d'italia-de-chirico.jpg" class="img-fluid rounded mb-5 mb-lg-0"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../public/img/enigma-dell'oracolo-de-chirico.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Opere</h2>
+            <p class="lead fw-normal text-muted mb-0">Dal 1999 ad oggi abbiamo accresciuto l'esperienza del nostro team
+              certificando centinaia di aziende. Attraverso un lungo arco temporale che ha visto cambiare ed evolversi
+              la normativa di settore, la nostra formazione è stata costante e capace di rispondere prontamente alle
+              mutate esigenze che si sono via via presentate nelle varie attività dalla produzione agricola, alla
+              trasformazione di prodotto.</p>
+            <p class="lead fw-normal text-muted mb-0">Abbiamo investito nella qualità della certificazione scegliendo di
+              avvalerci di personale stimolato ad accrescere le proprie competenze, facendo delle Risorse Umane il
+              nostro reale punto di forza. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FINE Opere -->
+
+    <!-- INIZIO Cards: Lista, Mappa, Linea del tempo -->
+    <section class="py-5">
+      <div class="container px-5 my-5">
+
+        <div class="row gx-5">
+
+
+
+          <div class="col-lg-4 mb-5">
+
+            <div class="card h-100 shadow border-0">
+
+              <div class="card-body p-4">
+                <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
+                <a class="text-decoration-none link-dark stretched-link" href="#">
+                  <h5 class="card-title mb-3">LISTA </h5>
+                </a>
+                <p class="card-text mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempore
+                  pariatur, minus vel, iusto totam animi aspernatur eos non explicabo, quod cumque voluptates! Modi
+                  commodi perferendis nesciunt at dicta tempore.</p>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 mb-5">
+
+            <div class="card h-100 shadow border-0">
+
+              <div class="card-body p-4">
+                <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
+                <a class="text-decoration-none link-dark stretched-link" href="#">
+                  <h5 class="card-title mb-3">MAPPA</h5>
+                </a>
+                <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio culpa vero non
+                  tempore distinctio, officia, ipsa dolorum recusandae nisi reprehenderit optio quas. Nam itaque aliquam
+                  quas neque deserunt qui error.</p>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 mb-5">
+
+            <div class="card h-100 shadow border-0">
+              <div class="card-body p-4">
+                <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
+                <a class="text-decoration-none link-dark stretched-link" href="#">
+                  <h5 class="card-title mb-3">LINEA DEL TEMPO</h5>
+                </a>
+                <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus illum
+                  tempore suscipit obcaecati itaque architecto possimus libero sint eveniet sunt officia necessitatibus
+                  maiores, ratione sapiente aspernatur eos aperiam voluptatem.</p>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+    </section>
+    <!-- FINE Cards: Lista, Mappa, Linea del tempo -->
+  </main>
+  <!-- FINE Main: Sezione Autori -->
+
+  <!-- INIZIO Footer -->
+  <footer class="py-3 my-4 ">
+    <ul class="nav navbar-dark bg-dark justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link px-2 text-body-secondary" style="color:white !important;">Home</a>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Introduzione</a></li>
+      <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Catalogo</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Crediti</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+          style="color:white !important;">Licenze</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">Copyright (c) 2025 by Nadine Nicoli</p>
+  </footer>
+  <!-- FINE Footer -->
+
+</body>
+
+</html>

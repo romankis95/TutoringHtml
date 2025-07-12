@@ -1,0 +1,10 @@
+body{
+	font-family: Arial; /* Font principale */
+	font-size:14px; /* Dimensione base testo */
+}
+
+.topnav {
+    background-color: #333; /* Colore navbar */
+    overflow: hidden; /* Nasconde overflow */
+}
+
